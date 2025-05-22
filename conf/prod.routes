@@ -1,0 +1,4 @@
+->      /                                                  health.Routes
+GET     /guides/mobile-pin-service-guide           controllers.Default.redirect(to = "/guides/example-service-guide/")
+GET     /guides/mobile-pin-service-guide/          controllers.Assets.at(path="/public", file="index.html")
+GET     /guides/mobile-pin-service-guide/*file     controllers.Assets.at(path="/public", file)
